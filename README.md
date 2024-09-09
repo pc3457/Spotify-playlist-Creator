@@ -21,11 +21,13 @@ You can install these dependencies using the following command:
 
 ```bash
 pip install requests beautifulsoup4 spotipy
+```
 
-**## Setup**
+## Requirements
 
 Spotify Developer Account:
-You'll need a Spotify Developer account to obtain the client_id and client_secret. Create an application on the Spotify Developer Dashboard and note down your credentials.
+You'll need a Spotify Developer account to obtain the client_id and client_secret. 
+Create an application on the Spotify Developer Dashboard and note down your credentials.
 
 Set Up Spotify OAuth:
 Update the following fields in the code with your own Spotify credentials:
@@ -34,4 +36,31 @@ client_secret
 SPOTIFY_DISPLAY_NAME (your Spotify display name)
 Spotify Redirect URI:
 Ensure that the redirect URI specified in the Spotify Developer dashboard matches the one used in the code (http://example.com or your own URI).
+
+**How to Use**
+
+1. Run the Python script:
+Use the terminal to run the script:
+
+```bash
+python spotify_playlist_generator.py
+```
+2. Input a Date:
+3. The program will prompt you to input a date in the format YYYY-MM-DD. This will fetch the Billboard Top 100 chart for that specific day.
+4. Authorize Spotify:
+The Spotify authorization page will open in your default browser. Sign in to your Spotify account and allow the app to manage your playlists.
+5. Playlist Creation:
+The script will find the songs on Spotify and create a playlist with the available tracks.
+
+Example
+
+If you input the date 1990-10-25, the program will scrape Billboard's Hot 100 for that date and create a playlist named "1990-10-25 Billboard Top 100" in your Spotify account.
+
+
+**Future Enhancements**
+
+Improved Song Matching: Enhance the algorithm to better match songs between Billboard and Spotify.
+Playlist Customization: Allow the user to choose a specific number of songs, like the top 10 or top 50.
+Error Handling: Add better error handling for network issues, Spotify authentication failures, or incorrect date formats.
+
 
