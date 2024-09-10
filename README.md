@@ -37,6 +37,21 @@ SPOTIFY_DISPLAY_NAME (your Spotify display name)
 Spotify Redirect URI:
 Ensure that the redirect URI specified in the Spotify Developer dashboard matches the one used in the code (http://example.com or your own URI).
 
+**Setup**
+
+Spotify Developer Account
+To use Spotify's API, you must have a Spotify Developer account. Follow these steps to create one:
+
+Go to the Spotify Developer Dashboard.
+Create a new app to get your client_id and client_secret.
+Copy the credentials as you will need to update the code with these values.
+Set Up Spotify OAuth
+In the Python script, update the following fields with your Spotify credentials:
+
+client_id: Your Spotify app's client ID.
+client_secret: Your Spotify app's client secret.
+SPOTIFY_DISPLAY_NAME: Your Spotify display name.
+
 **How to Use**
 
 1. Run the Python script:
