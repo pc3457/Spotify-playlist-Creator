@@ -23,8 +23,6 @@ You can install these dependencies using the following command:
 pip install requests beautifulsoup4 spotipy
 ```
 
-## Requirements
-
 Spotify Developer Account:
 You'll need a Spotify Developer account to obtain the client_id and client_secret. 
 Create an application on the Spotify Developer Dashboard and note down your credentials.
